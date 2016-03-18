@@ -1,0 +1,41 @@
+<h2>Transferência</h2>
+
+<p>Preencha os campos para efetuar a operação:</p>
+
+<div class="transferencia-panel">
+  <form>
+    <div class="form-group">
+      <label for="destinatario">Destinatário</label>
+      <input type="text" class="form-control" id="c" placeholder="Nome completo">
+    </div>
+    <div class="form-group">
+      <label for="cpf">CPF</label>
+      <input type="text" class="form-control" id="cpf" placeholder="CPF">
+    </div>
+    <div class="form-group">
+      <label for="bancoDestino">Banco de destino</label>
+      <select class="form-control" id="bancoDestino">
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="agencia">Agência</label>
+      <input type="text" class="form-control" id="agencia" placeholder="Agência">
+    </div>
+    <div class="form-group">
+      <label for="conta">Conta</label>
+      <input type="text" class="form-control" id="conta" placeholder="Conta">
+    </div>
+
+    <div class="form-inline">
+      <div class="form-group">
+        <label class="sr-only" for="exampleInputAmount">Valor</label>
+        <div class="input-group">
+          <div class="input-group-addon">R$</div>
+          <input type="text" class="form-control" id="exampleInputAmount" placeholder="Valor">
+          <div class="input-group-addon">,00</div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Efetuar Transferência</button>
+    </div>
+  </form>
+</div>

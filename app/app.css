@@ -1,0 +1,37 @@
+/* app css stylesheet */
+
+body { 
+    padding-top: 70px; 
+}
+
+.navbar-right{
+    margin-right: 2px;
+}
+
+div.content {
+    margin-left: 10px;
+}
+
+.table { 
+    max-width: 70%;
+    margin: 20px auto 0 auto; 
+}
+
+div.right {
+    text-align: right;
+    margin-right: 100px;
+    font-weight: bolder;
+}
+
+div.transferencia-panel {
+    margin-left: 5%;
+    max-width: 70%;
+}
+
+input.form-control {
+    width: 250px;
+}
+
+select.form-control {
+    width: 200px;
+}

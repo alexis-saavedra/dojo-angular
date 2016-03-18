@@ -1,0 +1,28 @@
+<h2>Extrato</h2>
+
+<p>Ultimos valores encontrados para a sua conta:</p>
+
+<div class="right">
+  <p>Saldo atual: {{extrato.lancamentos[extrato.lancamentos.length - 1].valor | currency: "R$ "}}</p>
+</div>
+
+<div>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Operação</th>
+        <th>Tipo</th>
+        <th>Valor</th>
+        <th>Data</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="lancamento in extrato.lancamentos">
+        <td>{{lancamento.descHistorico}}</td>
+        <td>{{lancamento.tipoLancamento}}</td>
+        <td>{{lancamento.valor | currency: 'R$ '}}</td>
+        <td>{{lancamento.data | date : 'dd/MM/yyyy'}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
